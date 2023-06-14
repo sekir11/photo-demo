@@ -14,23 +14,20 @@ function App() {
     <Router>
       <Routes>
         <Route
-          path={`${process.env.PUBLIC_URL}/photo-demo/home`}
+          path={`${process.env.PUBLIC_URL}/home`}
           element={<Home />}
         ></Route>
         <Route
-          path={`${process.env.PUBLIC_URL}/photo-demo/create`}
+          path={`${process.env.PUBLIC_URL}/create`}
           element={<Create />}
         ></Route>
+        <Route path={`${process.env.PUBLIC_URL}/`} element={<Login />}></Route>
         <Route
-          path={`${process.env.PUBLIC_URL}/photo-demo/`}
-          element={<Login />}
-        ></Route>
-        <Route
-          path={`${process.env.PUBLIC_URL}/photo-demo/take`}
+          path={`${process.env.PUBLIC_URL}/take`}
           element={<Take setUri={setUri} />}
         ></Route>
         <Route
-          path={`${process.env.PUBLIC_URL}/photo-demo/confirm`}
+          path={`${process.env.PUBLIC_URL}/confirm`}
           element={<Confirm uri={uri} />}
         ></Route>
       </Routes>
