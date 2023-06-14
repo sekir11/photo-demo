@@ -13,11 +13,23 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/home" element={<Home />}></Route>
-        <Route path="/create" element={<Create />}></Route>
-        <Route path="/login" element={<Login />}></Route>
-        <Route path="/take" element={<Take setUri={setUri} />}></Route>
-        <Route path="/confirm" element={<Confirm uri={uri} />}></Route>
+        <Route
+          path={`${process.env.PUBLIC_URL}/home`}
+          element={<Home />}
+        ></Route>
+        <Route
+          path={`${process.env.PUBLIC_URL}/create`}
+          element={<Create />}
+        ></Route>
+        <Route path={`${process.env.PUBLIC_URL}/`} element={<Login />}></Route>
+        <Route
+          path={`${process.env.PUBLIC_URL}/take`}
+          element={<Take setUri={setUri} />}
+        ></Route>
+        <Route
+          path={`${process.env.PUBLIC_URL}/confirm`}
+          element={<Confirm uri={uri} />}
+        ></Route>
       </Routes>
     </Router>
   );
