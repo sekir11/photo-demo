@@ -7,7 +7,7 @@ const Home = () => {
 
   const navigate = new useNavigate();
   const create = () => {
-    navigate("/create");
+    navigate(`${process.env.PUBLIC_URL}/create`);
   };
 
   useEffect(() => {

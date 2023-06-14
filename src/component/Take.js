@@ -11,7 +11,7 @@ const Take = ({ setUri }) => {
     onClose();
   };
   const onClose = () => {
-    navigate("/confirm");
+    navigate(`${process.env.PUBLIC_URL}/confirm`);
   };
 
   return (

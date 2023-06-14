@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 const Create = () => {
   const navigate = new useNavigate();
   const take = () => {
-    navigate("/take");
+    navigate(`${process.env.PUBLIC_URL}/take`);
   };
   return (
     <div>

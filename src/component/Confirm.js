@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const Confirm = ({ uri }) => {
   const navigate = new useNavigate();
   const next = () => {
-    navigate("/create");
+    navigate(`${process.env.PUBLIC_URL}/create`);
   };
   return (
     <div>
